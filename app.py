@@ -113,10 +113,8 @@ body {margin:0;}
   <a class="active" href="https://www.linkedin.com/in/jesusalvarezcrespo/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
   <a class = "imgmbit" href="https://www.mbitschool.com" target="_blank"></a>	  
   <a href="https://github.com/mcclainej84/md-detection-streamlit" target="_blank"><i class="fa fa-github"></i></a>   
-  <a href="https://docs.streamlit.io" target="_blank"><i class="fa fa-globe"></i></a> 	  
-  <a href="mailto: jesus.ac.1984@gmail.com"><i class="fa fa-envelope"></i></a> 
-	  
-	 
+  <a href="https://md-detection.streamlit.app" target="_blank"><i class="fa fa-cloud"></i></a> 		  
+  <a href="https://docs.streamlit.io" target="_blank"><i class="fa fa-book" aria-hidden="true"></i></a> 	    	  
 </div>
 
 
