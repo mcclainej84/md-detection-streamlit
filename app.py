@@ -8,8 +8,6 @@ from eda_app import run_eda_app
 from ml_app import run_ml_app
 
 
-
-
 PAGE_HOME = "Home"
 PAGE_EDA = "EDA"
 PAGE_ML = "ML"
@@ -23,8 +21,6 @@ def main():
 	#page selector
 	ps = st.sidebar.selectbox("Selector de sección",(PAGE_SELECT))
 
-	
-
 	if ps== PAGE_HOME:
 		home_app()
 	elif ps == PAGE_EDA:
@@ -34,29 +30,14 @@ def main():
 	else:
 		run_ml_app()		
 
-
 def header():
-	stc.html("""
-<style>
-.header {
-    background-color: blue;
-    padding: 20px;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-}
-	  
-.header h1, .header p {
-    color: white;
-    font-size: 26px;
-}
-</style>
-
-<div class="header">
-    <h1>App para la detección temprana de DM</h1>
-    <p>(Diabetes Mellitus)</p>
-</div>
-""")
+	html = f'''
+    	<div style="background-color: #255; border-radius: 30px; padding: 10px;">
+		<h2 style="text-align: center;">App para la detección temprana de DM</h2>
+    	<p style="text-align: center; font-weight: bold;">(Diabetes Mellitus)</p>     
+    	</div>
+    '''
+	st.markdown(html, unsafe_allow_html=True)
 
 def home_app():
 	
@@ -90,7 +71,7 @@ body {margin:0;}
 
 .icon-bar {
   width: 100%;
-  background-color: #555;
+  background-color: #255;
   overflow: auto;
 }
 
@@ -111,18 +92,36 @@ body {margin:0;}
 .active {
   background-color: #04AA6D;
 }
+	  
+.imgmbit {
+  height: 41px; /* You must set a specified height */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */  
+  background-position: center; /* Center the image */	  
+  background-image: url("https://www.emagister.com/assets/es/logos/centro/id/125746/size/l.jpg");
+}
+	  
+.imgmbit:hover {
+  filter: invert(0.80);	  
+  );
+}	  
+	  
 </style>
 <body>
+
 <div class="icon-bar">
   <a class="active" href="https://www.linkedin.com/in/jesusalvarezcrespo/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-  <a href="https://github.com/mcclainej84/md-detection-streamlit" target="_blank"><i class="fa fa-github"></i></a> 
-  <a href="https://www.mbitschool.com" target="_blank"><img src='./mbit-logo.jpg'/></a> 	  
-  <a class="active" href="https://www.linkedin.com/in/jesusalvarezcrespo/" target="_blank"><i class="fa fa-linkedin"></i></a> 
-  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a class = "imgmbit" href="https://www.mbitschool.com" target="_blank"></a>	  
+  <a href="https://github.com/mcclainej84/md-detection-streamlit" target="_blank"><i class="fa fa-github"></i></a>   
+  <a href="https://docs.streamlit.io" target="_blank"><i class="fa fa-globe"></i></a> 	  
+  <a href="mailto: jesus.ac.1984@gmail.com"><i class="fa fa-envelope"></i></a> 
+	  
+	 
 </div>
 
+
 </body>
-""")
+""") 	   	  
 
 
 if __name__ == '__main__':
