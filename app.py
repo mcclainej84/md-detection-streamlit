@@ -115,8 +115,8 @@ body {margin:0;}
 <body>
 <div class="icon-bar">
   <a class="active" href="https://www.linkedin.com/in/jesusalvarezcrespo/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
-  <a href="" target="_blank"><i class="fa fa-github"></i></a> 
-  <a href="https://www.mbitschool.com" target="_blank"><i class="fa fa-globe"></i></a> 	  
+  <a href="https://github.com/mcclainej84/md-detection-streamlit" target="_blank"><i class="fa fa-github"></i></a> 
+  <a href="https://www.mbitschool.com" target="_blank"><img src='./mbit-logo.jpg'/></a> 	  
   <a class="active" href="https://www.linkedin.com/in/jesusalvarezcrespo/" target="_blank"><i class="fa fa-linkedin"></i></a> 
   <a href="#"><i class="fa fa-envelope"></i></a> 
 </div>
